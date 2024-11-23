@@ -6,7 +6,6 @@
 int keypressed;
 int FRM1;
 
-
 struct Game {
     ICBYTES m;
     struct Player {
@@ -62,8 +61,6 @@ void InitializeShatter(Game& game, int direction) {
     game.isShattered = true;
     game.shatterDuration = 20;
 }
-
-
 
 void ClearFragments(Game& game) {
     for (auto& fragment : game.fragments) {
